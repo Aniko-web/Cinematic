@@ -8,7 +8,6 @@
 
 
 /* Navbar start */
-.navbar {}
 
 .navbar_top {
     width: 100%;
@@ -81,8 +80,6 @@
     position: relative;
 }
 
-.header_img {}
-
 .header_parda {
     position: absolute;
     top: 0;
@@ -145,4 +142,147 @@
     background: rgba(0, 0, 0, 0);
     border: 1px outset rgba(255, 255, 255, 0.35);
     backdrop-filter: blur(16px);
+}
+
+/* Main start */
+.main {
+    width: 100%;
+}
+
+/* Films start */
+.films {
+    width: 100%;
+    background-color: #040D1F;
+    padding-top: 44px;
+    padding-bottom: 70px;
+    padding-left: auto;
+    padding-right: auto;
+}
+
+.films_cards_title {
+    font-size: 36px;
+    font-weight: 400;
+    color: #F18128;
+
+}
+
+.films_cards_title::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background-color: #F18128;
+    margin: 1px 0 54px;
+}
+
+.films_cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.films_card {
+    width: 255px;
+    height: 367px;
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+}
+
+.films_card_img {
+    width: 100%;
+    height: 100%
+}
+
+.films_card_parda {
+    position: absolute;
+    top: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    gap: 30px;
+    color: white;
+    z-index: 3;
+    padding: 0 15px;
+}
+
+.films_card_pardaz {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#F1812859, black);
+    opacity: 0.7;
+}
+
+.films_card_parda_time {
+    width: 100px;
+    height: 24px;
+    border: 1px solid white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* Widow start */
+.widow {
+    width: 100%;
+    margin-top: -48px;
+
+}
+
+.widow_f {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.widow_img {
+    width: 445px;
+    height: 100px;
+}
+
+.widow_video {
+    height: 500px;
+    width: 717px;
+    margin-right: -100px;
+}
+
+.widow_video_parda {
+    background: linear-gradient(90deg, white, rgba(0, 0, 0, 0));
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    margin-top: 48px;
+}
+
+.widow_trailer {
+    position: relative;
+}
+
+.widow_cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+}
+
+.widow_btn {
+    width: 166px;
+    height: 46px;
+    border-radius: 4px;
+    background-color: #F18128;
+    border: 1px solid #F18128;
+    transition: 0.7s;
+}
+.widow_btn :hover{
+    color: white;
+    border: 1px solid black;
 }
